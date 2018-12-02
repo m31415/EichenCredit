@@ -10,7 +10,7 @@
 ```http://0.0.0.0:5000/process```
 With Body
 
-```nodes=[(<string:TaskName>,<int:NumberOfRepeats>), ...]```
+```nodes=[(<string:TaskName>,<int:NumberOfRepeats>), ...]``` </br>
 ```edges=[(<string:FromNode>, <string:ToNode>, <["sub_task","condition","next_task", "result"]:EdgeType>, <string:Result>), ...]```
 
 Example:
