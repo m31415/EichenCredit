@@ -10,8 +10,10 @@
 ```http://0.0.0.0:5000/process```
 With Body
 
-```nodes=[(<string:TaskName>,<int:NumberOfRepeats>), ...]```
+```nodes=[(<string:TaskName>,<int:NumberOfRepeats>), ...]``` </br>
 ```edges=[(<string:FromNode>, <string:ToNode>, <["sub_task","condition","next_task", "result"]:EdgeType>, <string:Result>), ...]```
+
+<b>Rule</b> : A result/next_task edge has always a counter condition edge (see example graph)
 
 Example:
 ```
@@ -44,6 +46,7 @@ curl -X GET \
 http://127.0.0.1:5000/process/tasks/<StartTask>
  ```
   
+ <b> Rule </b> Always use the StartTask of your process (Example A1)
  Example:
  
  ```
@@ -76,3 +79,36 @@ curl -X PUT \
 http://127.0.0.1:5000/process/tasks/A4 \
 -F done=True \
 -F result=A
+````
+
+# Conduct Example Process
+1. POST like above
+2. 
+````
+curl -X PUT \
+  http://127.0.0.1:5000/process/tasks/A2 \
+  -F done=True
+ ````
+ 3.
+````
+curl -X PUT \
+  http://127.0.0.1:5000/process/tasks/A3 \
+  -F done=True
+ ````
+4.
+```
+curl -X PUT \
+http://127.0.0.1:5000/process/tasks/A4 \
+-F done=True \
+-F result=A
+````
+5.
+````
+curl -X PUT \
+  http://127.0.0.1:5000/process/tasks/A5 \
+  -F done=True
+ ````
+ 
+=> Process ended with conducting Task A5,  GET ```http://127.0.0.1:5000/process/tasks/A1``` will return an empty set
+ ````
+ ````
