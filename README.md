@@ -56,7 +56,7 @@ When using the example process it should return:
 Please conduct one of following tasks : 
 {'A2 []'}
 ```
-Closed Bracked can contain possible results:
+Closed Brackets can contain possible results:
 ```
 Please conduct one of following tasks : 
 {"A4 ['B', 'A']"}
@@ -67,7 +67,12 @@ Please conduct one of following tasks :
 Conduct an open task with 
 ```
 curl -X PUT \
-  http://127.0.0.1:5000/process/tasks/A2 \
-  -F done=True
+http://127.0.0.1:5000/process/tasks/A2 \
+-F done=True
 ```
-
+When conducting a task with a result:
+```
+curl -X PUT \
+http://127.0.0.1:5000/process/tasks/A4 \
+-F done=True \
+-F result=A
