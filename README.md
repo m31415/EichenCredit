@@ -35,4 +35,4 @@ curl -X POST \
 ```
 Will create this internal Graph:
 
-![Image description](https://imgur.com/twLI7YQ)
+https://imgur.com/twLI7YQ
