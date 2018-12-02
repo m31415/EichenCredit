@@ -80,7 +80,7 @@ http://127.0.0.1:5000/process/tasks/A4 \
 -F done=True \
 -F result=A
 ````
-When conduction a repeat use ```done=False```
+When conducting a repeat use ```done=False```
 
 # Conduct Example Process
 1. POST like above
