@@ -33,3 +33,6 @@ curl -X POST \
 ("A4", "A5", "result", "A"),
 ("A5", "A4", "condition", "None")]
 ```
+Will create this internal Graph:
+
+![Image description](https://imgur.com/a/fMVzaIA)
