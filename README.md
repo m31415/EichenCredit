@@ -11,7 +11,7 @@
 With Body
 
 ```nodes=[(<string:TaskName>,<int:NumberOfRepeats>), ...]```
-```edges=[(<string:FromNode>, <string:ToNode>, "<["sub_task","condition","next_task", "result"]:EdgeType>, <string:Result>), ...]```
+```edges=[(<string:FromNode>, <string:ToNode>, <["sub_task","condition","next_task", "result"]:EdgeType>, <string:Result>), ...]```
 
 Example:
 ```
