@@ -85,3 +85,27 @@ http://127.0.0.1:5000/process/tasks/A4 \
 curl -X PUT \
   http://127.0.0.1:5000/process/tasks/A2 \
   -F done=True
+ ````
+ 3.
+````
+curl -X PUT \
+  http://127.0.0.1:5000/process/tasks/A3 \
+  -F done=True
+ ````
+4.
+```
+curl -X PUT \
+http://127.0.0.1:5000/process/tasks/A4 \
+-F done=True \
+-F result=A
+````
+5.
+````
+curl -X PUT \
+  http://127.0.0.1:5000/process/tasks/A5 \
+  -F done=True
+ ````
+ 
+=> Process ended with conducting Task A5,  GET ```http://127.0.0.1:5000/process/tasks/A1``` will return an empty set
+ ````
+ ````
