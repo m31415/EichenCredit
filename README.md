@@ -39,11 +39,14 @@ Will create this internal Graph:
 # Open Tasks [GET]
 
 Recieve open task with 
-```curl -X GET \
-  http://127.0.0.1:5000/process/tasks/<StartTask>```
+```
+curl -X GET \
+http://127.0.0.1:5000/process/tasks/<StartTask>
+ ```
   
  Example:
  
- ```curl -X GET \
+ ```
 curl -X GET \
-  http://127.0.0.1:5000/process/tasks/A1```
+http://127.0.0.1:5000/process/tasks/A1
+  ```
