@@ -46,6 +46,7 @@ curl -X GET \
 http://127.0.0.1:5000/process/tasks/<StartTask>
  ```
   
+ <b> Rule </b> Always use the StartTask of your process (Example A1)
  Example:
  
  ```
