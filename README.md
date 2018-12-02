@@ -1,16 +1,16 @@
 # EichenCredit
 
-Set up:
+# Set up:
 1. Open a new virtualenv
-2.  ```pip install -r requirements.txt```
-3. ```python run.py
+2. ```pip install -r requirements.txt```
+3. ```python run.py```
 
 
-Create a Process [POST]
+# Create a Process [POST]
 ```http://0.0.0.0:5000/process```
 With Body
 
-```nodes=[(<string:TaskName>,<int:NumberOfRepeats>), ...]````
+```nodes=[(<string:TaskName>,<int:NumberOfRepeats>), ...]```
 ```edges=[(<string:FromNode>, <string:ToNode>, "<["sub_task","condition","next_task", "result"]:EdgeType>, <string:Result>), ...]```
 
 Example:
