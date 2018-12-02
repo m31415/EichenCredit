@@ -50,3 +50,13 @@ http://127.0.0.1:5000/process/tasks/<StartTask>
 curl -X GET \
 http://127.0.0.1:5000/process/tasks/A1
   ```
+  
+When using the example process it should return:
+```
+Please conduct one of following tasks : 
+{'A2 []'}
+```
+
+# Conduct Task [PUT]
+
+Conduct an open task with
