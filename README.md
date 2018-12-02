@@ -34,5 +34,4 @@ curl -X POST \
 ("A5", "A4", "condition", "None")]
 ```
 Will create this internal Graph:
-
-https://imgur.com/twLI7YQ
+![Process](https://i.imgur.com/twLI7YQ.png)
