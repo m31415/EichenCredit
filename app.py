@@ -29,9 +29,6 @@ class Edge:
     def is_next(self):
         return self.edge_type == 'next_task'
 
-    def is_repeat(self):
-        return self.edge_type == 'repeat'
-
 
 class Task:
 
