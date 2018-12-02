@@ -13,7 +13,7 @@ With Body
 ```nodes=[(<string:TaskName>,<int:NumberOfRepeats>), ...]``` </br>
 ```edges=[(<string:FromNode>, <string:ToNode>, <["sub_task","condition","next_task", "result"]:EdgeType>, <string:Result>), ...]```
 
-# Rule : A result/next_task edge has always a counter condition edge (see example graph)
+<b>Rule</b> : A result/next_task edge has always a counter condition edge (see example graph)
 
 Example:
 ```
