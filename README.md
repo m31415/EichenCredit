@@ -15,7 +15,7 @@ With Body
 
 <b>Rules</b> : 
 1. A result/next_task edge has always a counter condition edge (see example graph)
-2. If a task has result edges it can not have next_task edges
+2. If a task has result edges it can not have next_task edges vice versa
 
 Example:
 ```
