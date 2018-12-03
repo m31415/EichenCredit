@@ -1,7 +1,7 @@
 # EichenCredit
 
 # Set up:
-1. Open a new virtualenv
+1. Open a new virtualenv (Python 3.6)
 2. ```pip install -r requirements.txt```
 3. ```python run.py```
 
